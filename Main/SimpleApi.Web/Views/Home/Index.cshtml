@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using SimpleApi.Framework;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello World</title>
+</head>
+<body>
+    你好啊！
+    <br />
+    你的SessionID是：@(ViewBag.SessionId)
+    <br />
+    当前会话初次访问时间是：@(Context.Session.GetString("Time"))
+    <br />
+    现在时间是：@(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
+    <br />
+    当前IP：@(Context.Request.HttpContext.GetIpAddress())
+</body>
+</html>

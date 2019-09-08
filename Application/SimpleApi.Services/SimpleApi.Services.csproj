@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Attributes" Version="6.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\SimpleApi.Data\SimpleApi.Data.csproj" />
+    <ProjectReference Include="..\..\Application\SimpleApi.UnitOfWork\SimpleApi.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\Common\SimpleApi.Redis\SimpleApi.Redis.csproj" />
+    <ProjectReference Include="..\..\Common\SimpleApi.Utils\SimpleApi.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
